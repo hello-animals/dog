@@ -16,13 +16,17 @@
 #title{
 font-size:100px;
 text-align: center;
+color:green;
 }
 .fox{
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 70%;
+  width: 50%;
    border:20px ridge rgb(240,150,0);
+   margin-left: 3%;
+   margin-right: 3%;
+   float: left;
 }
 .info{
   color:rgb(150,150,0);
@@ -36,23 +40,49 @@ text-align: center;
   color:rgb(10,150,0);
   font-size: 20px;
 }
+#box{
+  width:50%;
+}
 
+.cutydoggy{
+  border:20px ridge rgb(40,140,200);
+}
+.btn-quiz{
+  border-radius: 10px;
+  background: #17a2b8;
+  width: 100px;
+  height: 50px;
+  color:white;
+  font-size:20px;
+}
+#clearfloating{
+  clear:left;
+}
 </style>
+
 </head>
 <body>
-<h1 id="title"><a href="#firsttitle"><strong>All about dogs!!!</strong></a></h1>
+
+<h1 id="title"><strong>All about dogs!!!</strong></h1>
 
 <img class="fox" src="https://upload.wikimedia.org/wikipedia/commons/4/43/New_Guinea_Singing_Dog_on_trail-Cropped.jpg"
 alt="dog">
-<h2 class="title" id="firsttitle">Contents</h2>
+
+<br>
+<br>
+<br>
+<h2 class="title">Contents</h2>
 <ul class="info">
 <li><a href="#basic-info">Basic information</a></li>
 <li><a href="#types">Types of different dogs</a></li>
 <li><a href="#great-pets">Why dogs make great pets?</a></li>
+<li><a href="#famousdogs">Top 3 most famous fictional dogs</a></li>
+<li><a href="#quiz">What about you?</a></li>
 </ul>
-<h2 class="title" id="basic-info">Basic information</h2>
-<p class="info">  Dogs are from the biological family of <i>Canidae</i>.<br> In the Canidae family there's only carnivores, such as wolves, coyotes, foxes, jackals, dogs...</p>
 
+<div id="clearfloating">
+<h2 class="title" id="basic-info">Basic information</h2>
+<p class="info">  Dogs are from the biological family of <i>Canidae</i>.<br> In the Canidae family there's only carnivores, such as wolves, coyotes, foxes, jackals, dogs...</p></div>
 <h2 class="title" id="types">Types of different dogs</h2>
 <p class="info">At the time of this writing the FCI recognizes 339 breeds of dogs which are divided into 10 groups <br>
   based upon the dog’s purpose or function or upon its appearance or size. The 10 groups are:</p>
@@ -70,6 +100,36 @@ alt="dog">
 </ol>
 
 <h2 class="title" id="great-pets">Why dogs make great pets?</h2>
+
+<img class="cutydoggy" src="https://cdn-images-1.medium.com/max/2400/0*xc9fvuF4Cwn5yRaH.jpg"alt="super cute dog" width="40%">
+
+  <ul id="list-types">
+<li>Loyalty...</li><br>
+<li>Unconditional Love...</li><br>
+<li>Internal and external satisfaction...</li><br>
+<li>Simple mindset...</li><br>
+<li>Being Selfless...</li><br>
+</ul>
+
+
+<h2 class="title" id="famousdogs">Top 3 most famous fictional dogs</h2>
+<ol class="info">
+<li>– Santa’s Little Helper<br>
+
+They say a dog is for life, not just for Christmas. This much is certainly true of the Simpsons’ family dog, Santa’s Little Helper who has been gracing our screens since 1989 when he was rescued from a racetrack by Homer and brought home as a Christmas present. Being the pet of one of TV’s most bizarre families can’t have been easy and this Greyhound has been through a lot in his 25-year life from medical conditions to stints as a police dog.</li><br>
+<li>– Scooby Doo<br>
+
+The cowardly Great Dane has been helping his friends trap janitors and oil barons in masks for 45 years. The franchise has spawned eleven different TV series (the twelfth is due in 2015), three films and comic books. The sandwich-eating, ghoul-baiting dog also has a great number of relatives who have appeared in the films and series, such as Scrappy Doo and Scooby Dum.</li><br>
+<li>– Snoopy<br>
+
+Snoopy originally appeared in newspapers as part of the Peanuts strip. The well-loved Beagle continued to be part of the comic strip until the death of artist Charles M. Schulz in 2000. He has also appeared in full-length comic books, a TV series and the musical You’re a Good Man, Charlie Brown. Did you know that as part of the Apollo 10 mission a lunar module that approached the moon was called Snoopy? The command vessel was appropriately named Charlie Brown.</li><br>
+</ol></div>
+
+<form action="file:///Users/oliviakahn/Desktop/quiz-dogs.html" method="post">
+    <input type="text" name="name">
+<button type="button" class="btn-quiz">Take quiz</button>
+</form>
+
 
 </body>
 </html>
